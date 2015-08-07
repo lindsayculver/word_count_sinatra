@@ -1,0 +1,45 @@
+"Think Out Loud Page"
+
+
+so the easiest spec to start with would be having your program
+call back one word at a time.
+
+ behavior: returns a word
+ input: "lindsay"
+ output: lindsay
+
+
+
+but we want it to return a number.
+
+ behavior: returns a number
+ input: "lindsay", 'lindsay'
+ output: 1
+
+
+
+then you want it to be able to handle a string. so you have to
+split up a phrase and count how many times the word being searched
+pops up.
+
+ behavior: runs the program, splits into words, returns a number
+ input: "wow wow wow lindsay", 'wow' is search word
+ output: 3
+
+
+
+the next thing i think would make it better is to downcase the input
+so the program works even If SOmEbody TYPES liKE THiS.
+
+ behavior: returns all kinds of input (that are letters) as a number
+ input: "WOW wow WoW lIndSaY", 'wow' is search word
+ output: 3
+
+
+
+and for both fields.
+
+  behavior: returns all kinds of input (that are letters) in search
+  word field as a number
+  input: "wow wow wow lindsay", 'WOW' is search word
+  output: 3
